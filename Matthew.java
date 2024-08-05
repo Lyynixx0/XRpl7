@@ -1,6 +1,13 @@
-public class skibidi {
+public class Matthew {
     public static void main(String[] args ){
-        System.out.println("Nama saya Matthew Immanuel Widodo, saya dari kelas XR7, asal kota dari Malang,Singosari");
-        String a = "1";
+        String nama = "Matthew";
+        int usia = 15;
+        String alamat = "Perum Ardimulyo blok L 19";
+        double kelas = 10.7;
+
+        System.out.println("Nama saya : " + nama);
+        System.err.println("usia : " + usia +" tahun");
+        System.out.println("Alamat : " + alamat);
+        System.out.println("Kelas : " + kelas);
     }  
 }
