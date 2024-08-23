@@ -1,13 +1,29 @@
 // /Driver SiswaTester
+import java.util.Scanner;
+
+
 public class SiswaTester {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Inputkan Nama Siswa");
+        String nama = input.nextLine();
+        System.out.println("Inputkan ID Siswa");
+        int id = input.nextInt();
+        System.out.println("Inputkan IPK");
+        double ipk = input.nextDouble();
+        
+
+        Siswa Charoline = new Siswa(id, nama, ipk);
+        Charoline.print();
+        input.close();
         //object
         //Class object = new Constructor
         Siswa juna = new Siswa();
         Siswa arya = new Siswa();
         Siswa matt = new Siswa();
-        Siswa epan = new Siswa();
+        Siswa epan = new Siswa(); 
         Siswa eka = new Siswa();
+        Siswa Charol = new Siswa(123, "Charol",80.5);
 
         juna.id = 1;
         juna.nama = "Arjuna";
@@ -54,3 +70,4 @@ public class SiswaTester {
         
     }
 }
+
