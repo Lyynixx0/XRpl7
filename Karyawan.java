@@ -1,8 +1,22 @@
 //object class
 public class Karyawan {
-    int id;
-    String nama, unit, alamat;
+    private int id;
+    private String nama, unit, alamat;
 
+    public int getId() {
+        return this.id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNama()
+    {
+		return this.nama;
+	}
+    public void setNama(String nama)
+    {
+		this.nama = nama;
+	}
     //Constructor Parameter
     public Karyawan(int id, String nama, String unit, String alamat) {
         //variabel = parameter
@@ -11,7 +25,6 @@ public class Karyawan {
         this.unit = unit;
         this.alamat = alamat;
     }
-
     //method print
     public void print() {
         System.out.println("ID : "+ id);
